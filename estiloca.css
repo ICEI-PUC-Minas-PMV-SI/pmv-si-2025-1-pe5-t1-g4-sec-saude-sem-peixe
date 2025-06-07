@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.sidebar  {
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    border-radius: 8%;
+}
+
+.formulario {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 10vh auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Campo do número da consulta */
+.numero-da-consulta label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: rgb(35, 94, 92);
+}
+
+.numero-da-consulta input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* Botão */
+input[type="submit"] {
+    width: 50%;
+    margin: 25px auto 0;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.dados-da-consulta {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    min-height: 80px; /* deixa o espaço visível mesmo vazio */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dados-da-consulta p {
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.dados-da-consulta p:last-child {
+    border-bottom: none;
+}

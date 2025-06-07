@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estiloagendamento.css">
+  <title>Secretaria de Saúde</title>
+</head>
+<body>
+    <div class="container">
+      <nav class="sidebar">
+            <ul>
+                <li><a href="Home.html"><h2>Início</h2></a></li>
+                <li><a href="Agendamento.html">Agendar Consulta</a></li>
+                <li><a href="Ca.html">Ver Agendamentos</a></li>
+            </ul>
+
+    <div class="logo-container">
+        <img src="/imgs/WhatsApp Image 2025-06-04 at 21.58.26.jpeg" alt="Logo da Clínica">
+    </div>
+        </nav>
+    
+    <main>
+    <form class="formulario" action="" method="">
+       <h2>Agende sua Consulta ou Exame</h2>
+
+       
+       <div class="caracteristicas-do-agendamento">
+        <label class="subtitulo">Serviço</label><br>
+        <select name="tipo">
+            <option value="consulta">Consulta</option>
+            <option value="exame">Exame</option>
+        </select><br>
+
+        <select name="tipo">
+            <option value="medico">Medico</option>
+        </select><br>
+
+        <select name="tipo">
+            <option value="horário">Horários</option>
+        </select><br>
+        </div>
+
+        <div class="dados-do-paciente">
+        <label>Nome</label><br>
+        <input type="text" name="paciente" required><br>
+        
+        <label>Email</label><br>
+        <input type="email" name="paciente" required><br>
+
+        <label>Telefone</label><br>
+        <input type="text" name="paciente" required><br>
+
+        <label>Observações:</label><br>
+        <textarea name="observacoes"></textarea><br><br>
+        <input type="submit" value="Agendar">
+        </div>
+         
+    </form>
+    </main>
+
+   </div>
+</body>
+</html>
